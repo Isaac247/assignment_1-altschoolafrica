@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("/fonts/roboto-regular.woff2") format("woff2");
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Hammersmith One", sans-serif;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+li {
+  list-style: none;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+main {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: papayawhip;
+  overflow: hidden;
+}
+
+.signin-section,
+.apply-section {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 30px 60px;
+  background: rgb(255, 255, 255);
+  padding: 30px 30px 15px;
+}
+.about-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Hammersmith One", sans-serif;
+  margin-top: 100px;
+}
+.about-section p {
+  text-align: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+section {
+  height: 100vh;
+}
+.msg-icon {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  margin-inline-start: auto;
+  border-radius: 30px;
+  border-color:solid blue ;
+  padding: 10px;
+  color: white;
+  right: 1vw;
+  bottom: 1vh;
+}
+h4 {
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.help {
+  margin-top: 20px;
+  position: relative;
+}
+button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgb(106, 111, 245);
+  color: rgb(255, 255, 255);
+}
+.about-me {
+  padding: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+.help :nth-child(3) {
+  text-align: center;
+  margin-top: 20px;
+}
+.circle1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 90%;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(225deg);
+  background-color: pink;
+}
+.circle2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  left: -6vw;
+  top: 3vh;
+  background-color: lightskyblue;
+  transform: rotate(-20deg);
+}
+.signin-section h2 {
+  font-size: 2rem;
+  font-family: "Hammersmith One", sans-serif;
+  color: rgb(11, 30, 75);
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.signin-section h4 {
+  font-size: 1rem;
+  font-family: "Hammersmith One", sans-serif;
+  color: rgb(123, 123, 123);
+  line-height: 20px;
+  margin-bottom: 25px;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+label,
+input {
+  display: block;
+}
+input {
+  display: inline;
+  width: 100%;
+}
+form p::after,
+label::after {
+  display: inline;
+  content: "*";
+  color: red;
+}
+.apply-form {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  gap: 10px; 
+  
+}
+.apply-section {
+  width: 50vw;
+  margin-top: 0;
+  padding-top: 0;
+}
+.aboutMe-section {
+  padding: 10px;
+  margin-top: 0;
+  min-height: 90vh;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 30px 60px;
+  background: rgb(255, 255, 255);
+  padding: 30px 30px 15px;
+  width: 50vw;
+  margin-inline-start: 20vw;
+}
+.form-btn {
+  background: rgb(106, 111, 245);
+  padding: 12px;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .about-section {
+    display: none;
+  }
+  .apply-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
